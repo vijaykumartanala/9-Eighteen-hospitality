@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SectionTableViewCell" rowHeight="70" id="KGk-i7-Jjw" customClass="SectionTableViewCell" customModule="_Eighteen" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="341" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="341" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SiE-5I-039">
+                        <rect key="frame" x="8" y="8" width="325" height="54"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cookies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S77-ez-3To">
+                                <rect key="frame" x="12" y="8" width="249" height="38"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="$ 0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFO-L8-Bwf">
+                                <rect key="frame" x="277" y="16" width="36" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="S77-ez-3To" firstAttribute="top" secondItem="SiE-5I-039" secondAttribute="top" constant="8" id="6c9-Nt-ST5"/>
+                            <constraint firstAttribute="trailing" secondItem="CFO-L8-Bwf" secondAttribute="trailing" constant="12" id="Bh2-w9-uWg"/>
+                            <constraint firstItem="CFO-L8-Bwf" firstAttribute="leading" secondItem="S77-ez-3To" secondAttribute="trailing" constant="16" id="BpD-d0-VDP"/>
+                            <constraint firstItem="CFO-L8-Bwf" firstAttribute="centerY" secondItem="S77-ez-3To" secondAttribute="centerY" id="V1i-aW-Nen"/>
+                            <constraint firstItem="S77-ez-3To" firstAttribute="leading" secondItem="SiE-5I-039" secondAttribute="leading" constant="12" id="YAr-Fr-fNN"/>
+                            <constraint firstAttribute="bottom" secondItem="S77-ez-3To" secondAttribute="bottom" constant="8" id="yJB-B2-KCU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="SiE-5I-039" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="3Sm-9C-9tE"/>
+                    <constraint firstAttribute="bottom" secondItem="SiE-5I-039" secondAttribute="bottom" constant="8" id="8ud-6B-koR"/>
+                    <constraint firstAttribute="trailing" secondItem="SiE-5I-039" secondAttribute="trailing" constant="8" id="E4J-D6-t3i"/>
+                    <constraint firstItem="SiE-5I-039" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="y0B-mH-4FA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="itemCardView" destination="SiE-5I-039" id="7ZE-ch-k7d"/>
+                <outlet property="itemName" destination="S77-ez-3To" id="Fe0-sm-CQw"/>
+                <outlet property="itemPrice" destination="CFO-L8-Bwf" id="mdp-M3-AOv"/>
+            </connections>
+            <point key="canvasLocation" x="264.80000000000001" y="119.64017991004499"/>
+        </tableViewCell>
+    </objects>
+</document>

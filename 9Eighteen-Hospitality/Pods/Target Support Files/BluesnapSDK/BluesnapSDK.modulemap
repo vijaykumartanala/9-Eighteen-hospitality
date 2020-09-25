@@ -1,0 +1,6 @@
+framework module BluesnapSDK {
+  umbrella header "BluesnapSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

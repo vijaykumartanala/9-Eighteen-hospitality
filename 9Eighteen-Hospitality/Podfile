@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target '9Eighteen' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+   pod 'Firebase/Core'
+   pod 'Firebase/Messaging’
+   pod 'IQKeyboardManagerSwift'
+   pod 'SwiftGifOrigin', '~> 1.7.0'
+   pod 'BluesnapSDK'
+   pod 'BluesnapSDK/DataCollector'
+   pod 'NKVPhonePicker'
+   pod 'Socket.IO-Client-Swift'
+   pod 'SDWebImage'
+   pod 'RSKImageCropper'
+   pod 'ImageSlideshow', '~> 1.8.3'
+   pod "ImageSlideshow/Kingfisher"
+   pod 'TextFieldEffects'
+   pod 'Siren', :git => 'https://github.com/ArtSabintsev/Siren.git', :branch => 'swift4.1' # Swift 4.1
+  # Pods for 9Eighteen
+
+end
